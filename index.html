@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========================================================================
+       ZWEN POTERIE — LUXURY MOROCCAN ARTISAN SHOWROOM & WORKSHOP
+       Agadir, Morocco | Vanilla HTML5, CSS3, Modern ES6+ JavaScript
+       ======================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ========================================================================
+       TECHNICAL SEO & SOCIAL META TAGS
+       Local SEO keywords targeted for Agadir, Morocco pottery and workshops
+       ======================================================================== -->
+  <title>ZWEN POTERIE | Moroccan Pottery Showroom & Artisan Workshop Agadir</title>
+  <meta name="description" content="Discover ZWEN POTERIE in Agadir, Morocco. Experience authentic Moroccan pottery, handcrafted ceramic collections, and immersive artisan workshops led by Maître Artisan El Mustapha.">
+  <meta name="keywords" content="pottery workshop Agadir, Moroccan pottery, poterie artisanale, ceramic Agadir, atelier poterie Maroc, handmade Moroccan ceramics, Zwen Poterie Agadir">
+  <meta name="author" content="ZWEN POTERIE">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zwenpoterie.com/">
+  <meta property="og:title" content="ZWEN POTERIE | Futuristic Minimalist Moroccan Pottery in Agadir">
+  <meta property="og:description" content="Where ancient Moroccan clay traditions meet futuristic minimalist luxury. Visit our showroom and book an artisan workshop in Agadir.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ZWEN POTERIE | Moroccan Pottery & Workshops Agadir">
+  <meta name="twitter:description" content="Traditional Moroccan pottery meets modern minimalist aesthetics in Agadir.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- ========================================================================
+       TYPOGRAPHY (GOOGLE FONTS)
+       Serif: Cormorant Garamond & Playfair Display (Luxury & Heritage)
+       Sans-Serif: Space Grotesk & Syne (Futuristic & Modern)
+       ======================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ========================================================================
+       STRUCTURED DATA (SCHEMA.ORG LOCAL BUSINESS)
+       Enhances Google rich results and Google Maps local ranking in Agadir
+       ======================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ZWEN POTERIE",
+    "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+212657110942",
+    "email": "zwenpoterie@gmail.com",
+    "url": "https://zwenpoterie.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Agadir",
+      "addressRegion": "Souss-Massa",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "30.4278",
+      "longitude": "-9.5981"
+    },
+    "hasMap": "https://share.google/PlxCKu5xTYNA8g34h",
+    "sameAs": [
+      "https://instagram.com/zwenpoterie",
+      "https://wa.me/212657110942"
+    ],
+    "description": "Traditional Moroccan pottery showroom and artisan workshop in Agadir, Morocco. Handcrafted ceramic pieces and masterclass pottery workshops."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       CUSTOM CURSOR (VANILLA JS & CSS)
+       Sleek dot + trailing expanding ring. Automatically hides on mobile.
+       ======================================================================== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       STICKY GLASSMORPHIC HEADER & NAVIGATION
+       Features backdrop-filter blur, magnetic buttons, and mobile menu
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="ZWEN POTERIE Homepage">
+        <img src="images/logo.png" alt="ZWEN Poterie — Atelier d'Artisanat Agadir" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="showroom.html" class="nav-link">Showroom</a>
+        <a href="workshops.html" class="nav-link">Workshops</a>
+        <a href="our-story.html" class="nav-link">Our Story</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+      </nav>
+
+      <!-- Action Button (Magnetic effect) -->
+      <div class="header-actions">
+        <div class="magnetic-wrap">
+          <a href="workshops.html" class="btn btn-primary btn-magnetic">
+            <span>Book Workshop</span>
+            <span class="btn-icon">→</span>
+          </a>
+        </div>
+
+        <!-- Animated Mobile Hamburger Button -->
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE NAVIGATION OVERLAY
+       Sliding full-screen menu for smartphones & tablets
+       ======================================================================== -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="showroom.html" class="mobile-nav-link">Showroom</a>
+      <a href="workshops.html" class="mobile-nav-link">Workshops & Booking</a>
+      <a href="our-story.html" class="mobile-nav-link">Our Story</a>
+      <a href="blog.html" class="mobile-nav-link">Journal</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <span class="mobile-nav-contact">Agadir, Morocco</span>
+      <a href="https://wa.me/212657110942" target="_blank" rel="noopener noreferrer" class="mobile-nav-contact">+212 657 110 942</a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN PAGE CONTENT
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         SECTION 1: HERO SECTION
+         Full-screen immersive background with animated split-word typography
+         and magnetic interactive call-to-action buttons.
+         ====================================================================== -->
+    <section class="hero" aria-label="Welcome to ZWEN POTERIE">
+      <!-- Fullscreen Background with subtle mouse parallax -->
+      <div class="hero-bg-container">
+        <!-- 
+          TUTORIAL: To change the hero background image:
+          Replace the 'src' link below with your own image, for example: src="images/hero-bg.jpg"
+        -->
+        <img 
+          src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=2000&q=85" 
+          alt="Traditional Moroccan pottery artisan shaping clay in Agadir workshop" 
+          class="hero-bg-image"
+          loading="eager"
+        >
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <!-- Hero Text Content -->
+      <div class="container hero-content">
+        <div class="hero-tagline">
+          <span class="hero-tagline-dot"></span>
+          <span>Agadir, Morocco • Handcrafted Heritage</span>
+        </div>
+
+        <!-- 
+          Futuristic Split-Word Animation:
+          Each word is wrapped in a masked container that slides up smoothly via CSS keyframes.
+        -->
+        <h1 class="hero-title">
+          <span class="split-word"><span class="split-word-inner" style="animation-delay: 0.1s;">Discover</span></span>
+          <span class="split-word"><span class="split-word-inner" style="animation-delay: 0.2s;">the</span></span>
+          <span class="split-word"><span class="split-word-inner" style="animation-delay: 0.3s;">Art</span></span>
+          <span class="split-word"><span class="split-word-inner" style="animation-delay: 0.4s;">of</span></span>
+          <br>
+          <span class="split-word"><span class="split-word-inner" style="animation-delay: 0.5s;">Moroccan</span></span>
+          <span class="split-word"><span class="split-word-inner" style="animation-delay: 0.6s;">Pottery.</span></span>
+        </h1>
+
+        <p class="hero-description">
+          Where ancestral Amazigh clay craftsmanship meets futuristic minimalist luxury. Experience our exclusive Agadir showroom and immerse yourself in hands-on pottery workshops.
+        </p>
+
+        <!-- Magnetic Dual CTA Buttons -->
+        <div class="hero-cta-group">
+          <div class="magnetic-wrap">
+            <a href="showroom.html" class="btn btn-primary btn-magnetic">
+              <span>Our Pottery</span>
+              <span class="btn-icon">→</span>
+            </a>
+          </div>
+          <div class="magnetic-wrap">
+            <a href="workshops.html" class="btn btn-outline-light btn-magnetic">
+              <span>Book a Workshop</span>
+              <span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Mouse Scroll Indicator -->
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse-icon">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: STORY TEASER (50/50 ASYMMETRIC GRID)
+         Introducing EL MUSTAPHA, Maître Artisan
+         ====================================================================== -->
+    <section class="section section-light-grey" aria-labelledby="story-teaser-heading">
+      <div class="container">
+        <div class="story-teaser-grid">
+          
+          <!-- Asymmetric Visual Column with Floating Heritage Badge -->
+          <div class="story-teaser-media reveal-on-scroll">
+            <div class="story-image-wrap">
+              <img 
+                src="images/el-mustapha-artisan.webp" 
+                alt="Maître Artisan El Mustapha shaping Moroccan clay pottery on a wheel in Agadir atelier" 
+                loading="lazy"
+              >
+            </div>
+
+            <!-- Floating Badge: Staggered visual accent -->
+            <div class="heritage-floating-badge">
+              <div class="heritage-badge-number">35+</div>
+              <div class="heritage-badge-label">Years of Master Heritage in Agadir</div>
+            </div>
+          </div>
+
+          <!-- Editorial Text Content Column -->
+          <div class="story-teaser-content reveal-on-scroll delay-200">
+            <span class="section-label">Master of the Craft</span>
+            <h2 id="story-teaser-heading">Meet El Mustapha, Maître Artisan</h2>
+
+            <blockquote class="story-artisan-quote">
+              “Clay is not merely Moroccan earth; it is an ancient dialogue between patience, water, fire, and human soul.”
+            </blockquote>
+
+            <p>
+              Born and trained in the storied ceramic traditions of the Souss-Massa region, <strong>El Mustapha</strong> brings over three decades of ancestral knowledge to the heart of Agadir. Every vessel, tagine, and sculptural vase in our showroom is thrown by hand on traditional kick-wheels.
+            </p>
+            <p>
+              At <em>ZWEN POTERIE</em>, we celebrate raw terracotta textures, organic mineral glazes, and clean futuristic silhouettes that elevate Moroccan artisanal art into contemporary luxury architecture.
+            </p>
+
+            <!-- Features Mini-Grid -->
+            <div class="story-features-list">
+              <div class="story-feature-item">
+                <span class="story-feature-title">100% Natural Clay</span>
+                <span class="story-feature-desc">Locally harvested from Atlas mountain soils without artificial binders.</span>
+              </div>
+              <div class="story-feature-item">
+                <span class="story-feature-title">Ancestral Glazes</span>
+                <span class="story-feature-desc">Formulated with mineral oxides, copper, cobalt, and natural wood ash.</span>
+              </div>
+              <div class="story-feature-item">
+                <span class="story-feature-title">Intimate Sessions</span>
+                <span class="story-feature-desc">Private and small-group pottery masterclasses tailored to all skill levels.</span>
+              </div>
+              <div class="story-feature-item">
+                <span class="story-feature-title">Agadir Sanctuary</span>
+                <span class="story-feature-desc">A serene creative atelier just minutes from the Atlantic coast.</span>
+              </div>
+            </div>
+
+            <div class="magnetic-wrap">
+              <a href="our-story.html" class="btn btn-secondary btn-magnetic">
+                <span>Read Full Story</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: SHOWCASE CAROUSEL
+         Swipeable, ultra-smooth JavaScript carousel for top workshops & pieces
+         featuring a modern progress indicator and touch gestures.
+         ====================================================================== -->
+    <section class="section" aria-labelledby="showcase-heading">
+      <div class="container">
+        
+        <!-- Section Header with Minimalist Nav Controls -->
+        <div class="carousel-header-wrap reveal-on-scroll">
+          <div class="carousel-title-group">
+            <span class="section-label">Curated Collection & Sessions</span>
+            <h2 id="showcase-heading">Signature Pottery & Masterclasses</h2>
+          </div>
+
+          <div class="carousel-controls" aria-label="Carousel navigation">
+            <button class="carousel-nav-btn prev" aria-label="Previous Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-nav-btn next" aria-label="Next Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Viewport & Draggable Track -->
+        <div class="carousel-container reveal-on-scroll delay-100">
+          <div class="carousel-track">
+
+            <!-- Slide 1: Throwing Workshop -->
+            <article class="carousel-slide">
+              <div class="showcase-card">
+                <div class="showcase-image-holder">
+                  <!-- TUTORIAL: Replace with your image (e.g., images/workshop-throwing.jpg) -->
+                  <img 
+                    src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80" 
+                    alt="Hands shaping wet clay on a pottery wheel during Agadir workshop" 
+                    loading="lazy"
+                  >
+                  <span class="showcase-tag">Workshop</span>
+                </div>
+                <div class="showcase-card-body">
+                  <h3 class="showcase-card-title">Wheel Throwing Masterclass</h3>
+                  <p class="showcase-card-text">
+                    Learn the core principles of centering, opening, and pulling clay under the direct mentorship of El Mustapha.
+                  </p>
+                  <a href="workshops.html" class="showcase-card-link">
+                    <span>Reserve a Slot</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2: Minimalist Amphora -->
+            <article class="carousel-slide">
+              <div class="showcase-card">
+                <div class="showcase-image-holder">
+                  <!-- TUTORIAL: Replace with your image (e.g., images/sculptural-amphora.jpg) -->
+                  <img 
+                    src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=800&q=80" 
+                    alt="Minimalist raw terracotta Moroccan amphora vase" 
+                    loading="lazy"
+                  >
+                  <span class="showcase-tag">Signature Piece</span>
+                </div>
+                <div class="showcase-card-body">
+                  <h3 class="showcase-card-title">Terracotta Souss Amphora</h3>
+                  <p class="showcase-card-text">
+                    An imposing sculptural silhouette with twin organic handles, finished in an unglazed natural iron clay.
+                  </p>
+                  <a href="showroom.html" class="showcase-card-link">
+                    <span>View in Showroom</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3: Glazing Session -->
+            <article class="carousel-slide">
+              <div class="showcase-card">
+                <div class="showcase-image-holder">
+                  <!-- TUTORIAL: Replace with your image (e.g., images/glazing-session.jpg) -->
+                  <img 
+                    src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80" 
+                    alt="Artisan ceramic vessels awaiting firing in Agadir kiln" 
+                    loading="lazy"
+                  >
+                  <span class="showcase-tag">Workshop</span>
+                </div>
+                <div class="showcase-card-body">
+                  <h3 class="showcase-card-title">Ancestral Glazes & Mineral Oxides</h3>
+                  <p class="showcase-card-text">
+                    Discover traditional Moroccan dip and brush glazing using natural cobalt, ochre, and wood-ash mixtures.
+                  </p>
+                  <a href="workshops.html" class="showcase-card-link">
+                    <span>Book Session</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4: Futuristic Basin -->
+            <article class="carousel-slide">
+              <div class="showcase-card">
+                <div class="showcase-image-holder">
+                  <!-- TUTORIAL: Replace with your image (e.g., images/berber-bowl.jpg) -->
+                  <img 
+                    src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" 
+                    alt="Hand-thrown Moroccan ceramic vessel with earthy texture" 
+                    loading="lazy"
+                  >
+                  <span class="showcase-tag">Signature Piece</span>
+                </div>
+                <div class="showcase-card-body">
+                  <h3 class="showcase-card-title">Monolithic Agadir Basin</h3>
+                  <p class="showcase-card-text">
+                    Clean geometric rim with hand-scraped tactile exterior, blending ancient Moroccan pottery with brutalist minimalism.
+                  </p>
+                  <a href="showroom.html" class="showcase-card-link">
+                    <span>Enquire Piece</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 5: Private Intensive -->
+            <article class="carousel-slide">
+              <div class="showcase-card">
+                <div class="showcase-image-holder">
+                  <!-- TUTORIAL: Replace with your image (e.g., images/private-intensive.jpg) -->
+                  <img 
+                    src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" 
+                    alt="Artisan working intimately on detail work in Moroccan studio" 
+                    loading="lazy"
+                  >
+                  <span class="showcase-tag">Private Session</span>
+                </div>
+                <div class="showcase-card-body">
+                  <h3 class="showcase-card-title">One-on-One Artisan Residency</h3>
+                  <p class="showcase-card-text">
+                    An immersive half-day or full-day private intensive tailored for collectors, artists, and passionate beginners.
+                  </p>
+                  <a href="workshops.html" class="showcase-card-link">
+                    <span>Schedule Residency</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Modern Progress Bar & Counter -->
+        <div class="carousel-progress-wrapper reveal-on-scroll delay-200">
+          <div class="carousel-progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+            <div class="carousel-progress-fill"></div>
+          </div>
+          <div class="carousel-counter">
+            <span class="carousel-counter-current">01</span> / <span class="carousel-counter-total">05</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FLOATING ACTION BUTTON: PERSISTENT WHATSAPP ICON
+       Pulsating ripple radar animation on EVERY page linking to +212 657 110 942
+       ======================================================================== -->
+  <aside class="floating-whatsapp" aria-label="Direct WhatsApp Contact">
+    <a 
+      href="https://wa.me/212657110942" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="floating-whatsapp-btn"
+      aria-label="Chat directly with ZWEN POTERIE on WhatsApp"
+    >
+      <!-- Official WhatsApp SVG Icon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <!-- Tooltip message -->
+      <span class="whatsapp-tooltip">Chat with Artisan El Mustapha</span>
+    </a>
+  </aside>
+
+  <!-- ========================================================================
+       MINIMALIST LUXURY FOOTER
+       Includes all hardcoded contact credentials specified in requirements
+       ======================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Philosophy -->
+        <div>
+          <a href="index.html" aria-label="ZWEN POTERIE Home">
+            <img src="images/logo.png" alt="ZWEN Poterie Agadir" class="footer-brand-logo">
+          </a>
+          <p class="footer-brand-desc">
+            A sanctuary of Moroccan ceramic heritage in Agadir. Preserving ancestral clay throwing, mineral firing, and timeless minimalist craftsmanship.
+          </p>
+          <div class="footer-social-row">
+            <!-- Instagram -->
+            <a href="https://instagram.com/zwenpoterie" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow ZWEN POTERIE on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/212657110942" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Message ZWEN POTERIE on WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <div class="footer-heading">Showroom & Atelier</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="showroom.html" class="footer-link">Pottery Showroom</a></li>
+            <li><a href="workshops.html" class="footer-link">Book a Workshop</a></li>
+            <li><a href="our-story.html" class="footer-link">Our Heritage & Story</a></li>
+            <li><a href="blog.html" class="footer-link">Artisan Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Workshop Hours -->
+        <div>
+          <div class="footer-heading">Atelier Hours</div>
+          <ul class="footer-links-list" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+            <li><strong>Monday – Friday:</strong><br>09:30 – 19:00</li>
+            <li><strong>Saturday:</strong><br>10:00 – 18:30</li>
+            <li><strong>Sunday:</strong><br>By Private Appointment</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: HARDCODED CONTACT DATA -->
+        <div>
+          <div class="footer-heading">Connect with Us</div>
+          
+          <!-- Hardcoded WhatsApp / Phone -->
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <span>Phone / WhatsApp:</span><br>
+              <a href="https://wa.me/212657110942" target="_blank" rel="noopener noreferrer">+212 657 110 942</a>
+            </div>
+          </div>
+
+          <!-- Hardcoded Email -->
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <span>Direct Email:</span><br>
+              <a href="mailto:zwenpoterie@gmail.com">zwenpoterie@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Hardcoded Google Maps -->
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <span>Location:</span><br>
+              <a href="https://share.google/PlxCKu5xTYNA8g34h" target="_blank" rel="noopener noreferrer">Agadir, Morocco (View on Google Maps)</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 ZWEN POTERIE — Atelier Artisanal Agadir. All rights reserved.
+        </div>
+        <div>
+          Crafted with Moroccan Soul & Futuristic Minimalist Precision.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       CORE JAVASCRIPT ENGINE (MODULAR ES6+)
+       ======================================================================== -->
+  <script src="main.js" defer></script>
+</body>
+</html>
