@@ -1,0 +1,35 @@
+[
+  {
+    "id": "atlas-clay-heritage",
+    "slug": "blog-template.html?post=atlas-clay-heritage",
+    "title": "The Sacred Secret of Atlas Mountain Clay",
+    "category": "Heritage",
+    "date": "October 16, 2026",
+    "readTime": "5 min read",
+    "author": "El Mustapha, Maître Artisan",
+    "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "Why industrial processed clay can never match the mineral density, thermal resilience, and tactile warmth of earth hand-harvested from Morocco's Anti-Atlas foothills."
+  },
+  {
+    "id": "kick-wheel-vs-electric",
+    "slug": "blog-template.html?post=kick-wheel-vs-electric",
+    "title": "Why the Foot-Powered Kick-Wheel Surpasses Electric Mass Production",
+    "category": "Technique",
+    "date": "September 28, 2026",
+    "readTime": "6 min read",
+    "author": "El Mustapha, Maître Artisan",
+    "image": "https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "In our Agadir studio, electricity stops at the lights. Discover how the physical rhythm of the foot on a wooden flywheel imparts a living spiral into the clay walls."
+  },
+  {
+    "id": "authentic-tagine-care",
+    "slug": "blog-template.html?post=authentic-tagine-care",
+    "title": "The Essential Guide to Seasoning & Caring for an Unglazed Tagine",
+    "category": "Living with Ceramics",
+    "date": "August 14, 2026",
+    "readTime": "4 min read",
+    "author": "El Mustapha, Maître Artisan",
+    "image": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "A step-by-step masterclass in soaking, olive oil curing, and charcoal heat diffusion to ensure your Moroccan terracotta cookware lasts for generations."
+  }
+]

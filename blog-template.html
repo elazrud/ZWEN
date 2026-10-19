@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========================================================================
+       ZWEN POTERIE — REUSABLE BLOG ARTICLE TEMPLATE
+       Agadir, Morocco | Vanilla HTML5, CSS3, Modern ES6+ JavaScript
+       ========================================================================
+       
+       TUTORIAL FOR BEGINNERS: HOW TO CREATE A NEW BLOG POST
+       ------------------------------------------------------------------------
+       1. Duplicate this file (e.g. Save As: "article-moroccan-glazes.html").
+       2. Look for the markers starting with "REPLACE ... HERE".
+       3. Swap your text inside the <p>, <h2>, and <blockquote> tags.
+       4. Swap the <img src="..."> tags with your own photo paths (e.g. "images/my-photo.jpg").
+       5. Add your new article to posts.json so it shows up on the Journal index (blog.html)!
+       ------------------------------------------------------------------------
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ========================================================================
+       REPLACE META TITLE & DESCRIPTION HERE
+       ======================================================================== -->
+  <!-- REPLACE ARTICLE TITLE IN TITLE TAG -->
+  <title>The Sacred Secret of Atlas Mountain Clay | ZWEN POTERIE Journal</title>
+  
+  <!-- REPLACE META DESCRIPTION -->
+  <meta name="description" content="Discover why wild-harvested clay from Morocco's Anti-Atlas mountains possesses unparalleled thermal and sculptural properties. Insights from Maître Artisan El Mustapha.">
+  <meta name="keywords" content="Moroccan pottery, Atlas clay, artisanal ceramics Agadir, Moroccan pottery workshop, Zwen Poterie Agadir">
+  <meta name="author" content="El Mustapha, Maître Artisan">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://zwenpoterie.com/blog-template.html">
+  <meta property="og:title" content="The Sacred Secret of Atlas Mountain Clay">
+  <meta property="og:description" content="Discover the geological and artisanal secrets of authentic Moroccan clay.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Typography (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org BlogPosting JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Sacred Secret of Atlas Mountain Clay",
+    "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
+    "author": {
+      "@type": "Person",
+      "name": "El Mustapha"
+    },
+    "publisher": {
+      "@type": "LocalBusiness",
+      "name": "ZWEN POTERIE"
+    },
+    "datePublished": "2026-10-16",
+    "description": "Why industrial processed clay can never match the mineral density and thermal resilience of earth hand-harvested from Morocco's Anti-Atlas foothills."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="ZWEN POTERIE Homepage">
+        <span class="brand-title">ZWEN POTERIE</span>
+        <span class="brand-subtitle">Atelier d’Artisanat • Agadir</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="showroom.html" class="nav-link">Showroom</a>
+        <a href="workshops.html" class="nav-link">Workshops</a>
+        <a href="our-story.html" class="nav-link">Our Story</a>
+        <a href="blog.html" class="nav-link active">Journal</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="header-actions">
+        <div class="magnetic-wrap">
+          <a href="workshops.html" class="btn btn-primary btn-magnetic">
+            <span>Book Workshop</span>
+            <span class="btn-icon">→</span>
+          </a>
+        </div>
+
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="showroom.html" class="mobile-nav-link">Showroom</a>
+      <a href="workshops.html" class="mobile-nav-link">Workshops & Booking</a>
+      <a href="our-story.html" class="mobile-nav-link">Our Story</a>
+      <a href="blog.html" class="mobile-nav-link active">Journal</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <span class="mobile-nav-contact">Agadir, Morocco</span>
+      <a href="https://wa.me/212657110942" target="_blank" rel="noopener noreferrer" class="mobile-nav-contact">+212 657 110 942</a>
+    </div>
+  </div>
+
+  <!-- ARTICLE CONTAINER -->
+  <main id="main-content">
+
+    <article class="section" style="padding-top: calc(var(--section-padding-y) + 2.5rem);">
+      <div class="container">
+
+        <!-- ARTICLE HEADER -->
+        <header class="article-header-wrapper reveal-on-scroll">
+          <nav class="breadcrumb-nav" style="justify-content: center; margin-bottom: 1.5rem;" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="blog.html">Journal</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Article</span>
+          </nav>
+
+          <!-- REPLACE CATEGORY HERE -->
+          <span class="section-label" style="padding-left: 0;">Heritage & Material</span>
+
+          <!-- REPLACE ARTICLE TITLE (H1) HERE -->
+          <h1 class="page-title" style="margin-bottom: 1.5rem;">
+            The Sacred Secret of Atlas Mountain Clay
+          </h1>
+
+          <!-- REPLACE PUBLICATION META HERE -->
+          <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(0,0,0,0.55);">
+            <span>By El Mustapha</span>
+            <span>•</span>
+            <span>October 16, 2026</span>
+            <span>•</span>
+            <span>5 Min Read</span>
+          </div>
+        </header>
+
+        <!-- 
+          TUTORIAL: HERO IMAGE
+          Replace the image src below with your article's main photo:
+          Example: <img src="images/my-article-image.jpg" alt="...">
+        -->
+        <div class="article-hero-media reveal-on-scroll delay-100">
+          <img 
+            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85" 
+            alt="Raw Moroccan Atlas mountain clay ready for shaping in Agadir atelier"
+          >
+        </div>
+
+        <!-- ARTICLE MAIN BODY TEXT -->
+        <div class="article-body-container reveal-on-scroll delay-200">
+
+          <!-- 
+            TUTORIAL: FIRST PARAGRAPH WITH ELEGANT DROPCAP
+            Replace the introductory text inside this paragraph.
+          -->
+          <p class="article-dropcap lead-text" style="margin-bottom: 2rem;">
+            T<!-- REPLACE TEXT HERE -->o hold a lump of wet Moroccan mountain clay in your hands is to hold millions of years of compressed geological history. In our modern digital world of high-speed manufacturing and synthetic polymers, authentic earthen terracotta remains one of the last pure dialogues between nature and the human palm.
+          </p>
+
+          <!-- REPLACE PARAGRAPHS HERE -->
+          <p>
+            For generations, the potters of the Souss-Massa region have known that not all clay is born equal. Commercial ceramic supply houses sell pre-packaged, standardized clay powders treated with chemical deflocculants. While uniform and predictable, such materials lose the vital micro-porosity and mineral warmth that characterize authentic Moroccan pottery.
+          </p>
+
+          <p>
+            At <em>ZWEN POTERIE</em> in Agadir, our clay is harvested directly from open-air river valleys near the foothills of the Anti-Atlas mountains. Rich in iron oxides, quartz silt, and magnesium silicates, this earth is naturally elastic and possesses extraordinary thermal endurance.
+          </p>
+
+          <!-- 
+            TUTORIAL: EDITORIAL PULLQUOTE
+            Replace the highlighted quote below.
+          -->
+          <blockquote class="editorial-pullquote-large" style="margin: 3.5rem 0; font-size: 1.85rem;">
+            “When you spin mountain earth on a kick-wheel, you are not simply shaping pottery; you are giving form to the silent pulse of the Moroccan landscape.”
+          </blockquote>
+
+          <!-- REPLACE SUBHEADING (H2) HERE -->
+          <h2 style="font-size: 2.2rem; margin: 3rem 0 1.25rem 0;">The Ritual of the 21-Day Sun Slaking</h2>
+
+          <p>
+            Freshly mined clay cannot be thrown immediately. It is rock-hard and interspersed with natural pebbles and desert grit. Our atelier begins by breaking the clay chunks with wooden mallets under the Agadir sun.
+          </p>
+          <p>
+            The crushed earth is then submerged in deep stone pits filled with pure well water. Over the course of three weeks, the water breaks the clay down particle by particle in a natural slaking process. Afterward, it is sieved through fine woven brass meshes, decanted, and slowly dried on terracotta tiles until it reaches the consistency of soft bread dough.
+          </p>
+
+          <!-- 
+            TUTORIAL: CALLOUT BOX / STUDIO ADVICE
+            Use this box for key takeaways, tips, or special quotes.
+          -->
+          <aside class="article-callout-box">
+            <div class="article-callout-title">Artisan Insight • Why It Matters</div>
+            <p style="margin-bottom: 0; font-size: 1rem; color: rgba(0,0,0,0.8);">
+              Because our Atlas clay contains natural silica micro-granules, it contracts and expands uniformly under high heat. This unique thermal equilibrium is what prevents traditional Moroccan tagines and cooking pots from cracking over open embers.
+            </p>
+          </aside>
+
+          <!-- REPLACE SUBHEADING (H2) HERE -->
+          <h2 style="font-size: 2.2rem; margin: 3rem 0 1.25rem 0;">Living with Handcrafted Terracotta</h2>
+
+          <p>
+            Unlike glazed factory porcelain that remains inert and cold to the touch, unglazed Moroccan terracotta breathes. Water stored in an authentic terracotta jar cools naturally by two to four degrees Celsius through evaporative transpiration along its outer walls.
+          </p>
+          <p>
+            When you bring an artisan ceramic piece into your home, you invite this gentle organic rhythm into your daily living space — a grounding reminder of ancient simplicity in an ultra-modern era.
+          </p>
+
+          <!-- 
+            TUTORIAL: AUTHOR BIO CARD
+            Customize the author details and direct link below.
+          -->
+          <div class="article-author-card">
+            <div class="article-author-avatar">
+              <img 
+                src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?auto=format&fit=crop&w=200&q=80" 
+                alt="Maître Artisan El Mustapha portrait"
+              >
+            </div>
+            <div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.35rem;">El Mustapha</h3>
+              <span style="font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-brown); font-weight: 600;">Maître Artisan • ZWEN POTERIE</span>
+              <p style="font-size: 0.9rem; color: rgba(0,0,0,0.7); margin-top: 0.5rem; margin-bottom: 1rem;">
+                Carrying 35+ years of ceramic mastery in Agadir, El Mustapha mentors travelers, collectors, and design lovers in traditional kick-wheel throwing and mineral glaze alchemy.
+              </p>
+              <a href="https://wa.me/212657110942?text=Hello%20El%20Mustapha,%20I%20read%20your%20article%20on%20Atlas%20Mountain%20Clay." target="_blank" rel="noopener noreferrer" style="font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-brown); font-weight: 700; text-decoration: underline;">
+                Connect on WhatsApp →
+              </a>
+            </div>
+          </div>
+
+          <!-- ARTICLE NAVIGATION LINKS -->
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 2rem; border-top: 1px solid var(--color-sand); flex-wrap: wrap; gap: 1rem;">
+            <a href="blog.html" class="blog-card-readmore">
+              <span>← Back to All Articles</span>
+            </a>
+            <a href="workshops.html" class="btn btn-primary">
+              <span>Experience the Clay in Agadir</span>
+              <span class="btn-icon">→</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- FLOATING ACTION BUTTON: PULSATING WHATSAPP ICON -->
+  <aside class="floating-whatsapp" aria-label="Direct WhatsApp Contact">
+    <a 
+      href="https://wa.me/212657110942" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="floating-whatsapp-btn"
+      aria-label="Chat directly with ZWEN POTERIE on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <span class="whatsapp-tooltip">Chat with Artisan El Mustapha</span>
+    </a>
+  </aside>
+
+  <!-- MINIMALIST LUXURY FOOTER -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div>
+          <div class="footer-brand-title">ZWEN POTERIE</div>
+          <p class="footer-brand-desc">
+            A sanctuary of Moroccan ceramic heritage in Agadir. Preserving ancestral clay throwing, mineral firing, and timeless minimalist craftsmanship.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com/zwenpoterie" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow ZWEN POTERIE on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/212657110942" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Message ZWEN POTERIE on WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Showroom & Atelier</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="showroom.html" class="footer-link">Pottery Showroom</a></li>
+            <li><a href="workshops.html" class="footer-link">Book a Workshop</a></li>
+            <li><a href="our-story.html" class="footer-link">Our Heritage & Story</a></li>
+            <li><a href="blog.html" class="footer-link">Artisan Journal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Atelier Hours</div>
+          <ul class="footer-links-list" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+            <li><strong>Monday – Friday:</strong><br>09:30 – 19:00</li>
+            <li><strong>Saturday:</strong><br>10:00 – 18:30</li>
+            <li><strong>Sunday:</strong><br>By Private Appointment</li>
+          </ul>
+        </div>
+
+        <!-- Hardcoded Contact Data -->
+        <div>
+          <div class="footer-heading">Connect with Us</div>
+          
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <span>Phone / WhatsApp:</span><br>
+              <a href="https://wa.me/212657110942" target="_blank" rel="noopener noreferrer">+212 657 110 942</a>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <span>Direct Email:</span><br>
+              <a href="mailto:zwenpoterie@gmail.com">zwenpoterie@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <span>Location:</span><br>
+              <a href="https://share.google/PlxCKu5xTYNA8g34h" target="_blank" rel="noopener noreferrer">Agadir, Morocco (View on Google Maps)</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 ZWEN POTERIE — Atelier Artisanal Agadir. All rights reserved.
+        </div>
+        <div>
+          Crafted with Moroccan Soul & Futuristic Minimalist Precision.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
